@@ -1,0 +1,320 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin: 0px;  
+}
+
+nav{
+    padding: 2rem;
+    background: rgb(28,48,25);
+    background: linear-gradient(90deg, rgba(28,48,25,1) 6%, rgba(44,83,27,1) 53%, rgb(149, 182, 78) 100%);
+    border-bottom: 1px solid darkgreen;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.logo{
+    width: 90px;
+}
+
+.ver_carro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 0.3rem;
+    border:2px solid darkgreen;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    border-radius: 5px;
+    color: black;
+}
+
+
+/*------ GENERAL---- */
+
+h1,h2,h3,p,a,li,button{
+    font-family: 'Lato', sans-serif;
+}
+
+/*------INDEX-------*/
+
+.fondo_landing1{
+    background-image: url("./img/img_landing1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.fondo_landing2{
+    background-image: url("./img/img_landing2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.el_f_land_1,.el_f_land_2{
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.el_f_land_1 h1,.el_f_land_2 h1{
+    transition: all .2s ease-in-out; 
+}
+
+.el_f_land_1 h1:hover,.el_f_land_2 h1:hover{ 
+    transform: scale(1.1); 
+}
+
+.el_f_land_2{
+    height: 605px;
+}
+
+.el_f_land_1 h1{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 128, 62);
+    border-radius: 7px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 30px 50px;
+}
+
+.el_f_land_2 h1{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 7px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 30px 50px;
+}
+
+.novedades{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    margin: auto;
+}
+
+.container_novedades{
+    display: flex;
+    justify-content: center;
+}
+
+.novedades article{
+    height: 410px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes_subs{
+    margin: auto;
+    width: 80%;
+    padding:2rem;
+}
+
+.container_redes_subs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+/*---NOSOTROS---*/
+
+.container_historia{
+    width: 70%;
+    margin: auto;
+    background: rgb(168, 221, 164);
+    padding: 1rem;
+}
+
+/*---TIENDA---*/
+.contenido_tienda{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside_tienda{
+    background-color: rgb(28, 36, 14);
+    color: white;
+    padding: 1rem;
+}
+
+.aside_tienda input{
+    margin: 10px;
+}
+
+.main_tienda,.main_producto{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("./img/fondo_jungla.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:1rem;
+}
+
+.aviso_tienda{
+    background-color: rgba(111, 151, 35, 0.8);
+    padding: 0.3rem;
+    margin-bottom:20px;
+    text-align: center;
+    color: white;
+}
+
+.main_tienda article,.container_novedades article{
+    background-color: rgb(133, 153, 97, .7);
+    border-radius: 7px;
+    padding:0.5rem;
+    margin:0.3rem;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img_desc{
+    width: 150px;
+    height: 155px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.img_desc:hover{
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 25px;
+}
+
+.main_tienda article a,
+.novedades article a{
+    text-decoration: none;
+    color: white;
+}
+
+.main_tienda article a img,
+.el_producto div a img,
+.container_novedades a img{
+    width: 45px;
+    height: 45px;
+    transition: all .2s ease-in-out; 
+}
+
+.main_tienda article a img:hover,
+.el_producto div a img:hover,
+.container_novedades a img:hover{ 
+    transform: scale(1.2); 
+}
+
+.desc{
+    background-color: rgb(76, 87, 55);
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+.div_add{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.lista_productos,.container_novedades{
+    display: flex;
+    flex-wrap: wrap;
+    width:90%;
+    margin: auto;
+}
+
+/*---PRODUCTO---*/
+
+.section_producto{
+    display: flex;
+    justify-content: center;
+}
+
+.el_producto{
+    background-color: rgb(133, 153, 97, .7);
+    border-radius: 7px;
+    padding:0.5rem;
+    margin:0.3rem;
+    width:600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.el_producto img{
+    width: 310px;
+    height: 310px;
+}
+
+.caracteristicas{
+    background-color: rgb(158, 172, 130);
+    box-shadow: inset 0 0 10px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-align: justify;
+}
+
+.desc_ampli{
+    background-color: rgb(85, 97, 63);
+    padding: 0.7rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px;
+    width: 85%;
+}
+
+.el_producto .div_add{
+    background-color: rgb(149, 182, 78);
+    padding: 0.5rem;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.el_producto .div_add img{
+    margin-left: 5rem;
+}
+
+
+/*---FOOTER---*/
+
+footer{
+    color: white;
+    font-weight: bold;
+    background: rgb(28,48,25);
+    background: linear-gradient(90deg, rgba(28,48,25,1) 6%, rgba(44,83,27,1) 53%, rgba(32,205,134,1) 100%);
+    border-top: 1px solid darkgreen;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div{
+    padding: 0.8rem;
+
+}
+
+/*---RESPONSIVE---*/
+
+@media (max-width: 600px) {
+    footer{
+        flex-direction: column;
+
+        align-content: center;        
+   
+    }
+}
